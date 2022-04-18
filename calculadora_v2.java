@@ -103,6 +103,8 @@ public class calculadora_v2 {
                 System.out.println("*******************************************************************************************************");                
             }
                 break;
+
+
             case 2:
                 int edad = 0 , meses = 0 , dias = 0 , horas = 0;
                 System.out.println("*******************************************************************************************************");
@@ -128,6 +130,8 @@ public class calculadora_v2 {
                 System.out.println("*******************************************************************************************************");
 
                 break;
+
+
             case 3: 
                 
                 double edad_perro_int = 0;
@@ -148,6 +152,23 @@ public class calculadora_v2 {
                 System.out.println("**                Tu edad en años de perro es aproximandamente " + formato.format(edad_perro_out) + " años de perro                  **");
                 System.out.println("*******************************************************************************************************");
             break;
+
+
+
+            case 4:
+                
+                System.out.println("*******************************************************************************************************");
+                System.out.println("**           Muy bien, Seleccionaste Calcular el numero segun la numerologia.                        **");
+                System.out.println("*******************************************************************************************************");
+                System.out.println("*******************************************************************************************************");
+                System.out.print("**                             Ahora ingresa tu dia de nacimiento: ");
+                edad_perro_int = sc.nextDouble();
+                System.out.println("*******************************************************************************************************");
+
+            break;
+
+
+
             default:
                 System.out.println("Opcion incorrectos");
                 break;
