@@ -1,4 +1,9 @@
- public class principal {
+public class calculadora{
+	public static void main(String[] args) {
+		
+	}
+}
+public class principal {
         public static void main(string[] args) {
             Scanner Zodiaco=new Scanner(System.in);
             int Dia,Mes;
