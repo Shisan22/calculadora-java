@@ -17,17 +17,19 @@ public class calculadora_v2 {
         System.out.println("*******************************************************************************************************");
         System.out.println("*******************************************************************************************************");
         System.out.println("**                                                                                                   **");
-        System.out.println("**                         1. Calcule el signo del zodiaco de una persona.                           **");
-        System.out.println("**                         2. Calcule la cantidad de dias vividos por una personas.                  **");
-        System.out.println("**                         3. Calcular la edad de una persona en años de perro.                     **");
-        System.out.println("**                         4. Calcular el numero según la numerologia.                              **");
+        System.out.println("**                         1. Calcular el signo del zodiaco de una persona.                          **");
+        System.out.println("**                         2. Calcular la cantidad de dias vividos por una personas.                 **");
+        System.out.println("**                         3. Calcular la edad de una persona en edad  de perro.                     **");
+        System.out.println("**                         4. Calcular el numero segun la numerologia.                               **");
         System.out.println("**                         5. Hacer una donacion a los Creadores.                                    **");
         System.out.println("**                                                                                                   **");
         System.out.println("*******************************************************************************************************");
         System.out.println("*******************************************************************************************************");
         System.out.println("");
-        System.out.println("Ingresa el valor de tu opcion: ");
+        System.out.println("*******************************************************************************************************");
+        System.out.print("**                                     Ingresa el valor de tu opcion: ");
         opcion_menu = sc.nextInt();
+        System.out.println("*******************************************************************************************************");
 
         switch (opcion_menu) {
             case 1:
@@ -35,7 +37,7 @@ public class calculadora_v2 {
             int dia = 0; 
             int mes = 0;
             System.out.println("*******************************************************************************************************");
-            System.out.println("**                Muy bien, Seleccionaste Calcule el signo del zodiaco de una persona.               **");
+            System.out.println("**                Muy bien, Seleccionaste Calcular el signo del zodiaco de una persona.               **");
             System.out.println("*******************************************************************************************************");
             System.out.println("*******************************************************************************************************");
             System.out.println("**                       Ahora ingresa el mes de tu nacimiento                                       **");
@@ -100,6 +102,32 @@ public class calculadora_v2 {
                 System.out.println("**                               Valores incorrectos :\\                                             **"); 
                 System.out.println("*******************************************************************************************************");                
             }
+                break;
+            case 2:
+                int edad = 0 , meses = 0 , dias = 0 , horas = 0;
+                System.out.println("*******************************************************************************************************");
+                System.out.println("**          Muy bien, Seleccionaste Calcular la cantidad de dias vividos por una personas.           **");
+                System.out.println("*******************************************************************************************************");
+                System.out.println("*******************************************************************************************************");
+                System.out.print("**                                      Ahora ingresa tu edad");
+                edad = sc.nextInt();
+                System.out.println("*******************************************************************************************************");
+                
+                meses = edad * 12;
+                dias = edad * 365;
+                horas = dias * 24;
+                
+                System.out.println("*******************************************************************************************************");
+                System.out.println("**                                Has vivido aproximadamente " + meses + " meses                               **");
+                System.out.println("*******************************************************************************************************");
+                System.out.println("*******************************************************************************************************");
+                System.out.println("**                              Has vivido aproximadamente " + dias + " dias                                 **");
+                System.out.println("*******************************************************************************************************");
+                System.out.println("*******************************************************************************************************");
+                System.out.println("**                             Has vivido aproximadamente " + horas + " horas                               **");
+                System.out.println("*******************************************************************************************************");
+
+
                 break;
             default:
                 System.out.println("datos incorrectos");
