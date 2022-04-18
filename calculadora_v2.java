@@ -1,4 +1,4 @@
-import java.io.PrintStream;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
@@ -127,10 +127,29 @@ public class calculadora_v2 {
                 System.out.println("**                             Has vivido aproximadamente " + horas + " horas                               **");
                 System.out.println("*******************************************************************************************************");
 
-
                 break;
+            case 3: 
+                
+                double edad_perro_int = 0;
+                double edad_perro_out = 0;
+                DecimalFormat formato = new DecimalFormat("#.##");
+
+                System.out.println("*******************************************************************************************************");
+                System.out.println("**           Muy bien, Seleccionaste Calcular la edad de una persona en edad de perro.               **");
+                System.out.println("*******************************************************************************************************");
+                System.out.println("*******************************************************************************************************");
+                System.out.print("**                                    Ahora ingresa tu edad: ");
+                edad_perro_int = sc.nextDouble();
+                System.out.println("*******************************************************************************************************");
+
+                edad_perro_out = edad_perro_int / 7;
+                
+                System.out.println("*******************************************************************************************************");
+                System.out.println("**                Tu edad en años de perro es aproximandamente " + formato.format(edad_perro_out) + " años de perro                  **");
+                System.out.println("*******************************************************************************************************");
+            break;
             default:
-                System.out.println("datos incorrectos");
+                System.out.println("Opcion incorrectos");
                 break;
         }
 
