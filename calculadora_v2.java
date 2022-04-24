@@ -168,6 +168,12 @@ public class calculadora_v2 {
                 numUno = in.nextInt();
                 System.out.println("*******************************************************************************************************");
                 
+                System.out.println("*******************************************************************************************************");
+                System.out.print("**                   Ahora ingresa el segundo numero de tu dia de nacimiento:                            ");
+                numDos = in.nextInt();
+                System.out.println("*******************************************************************************************************");
+                
+                
             break;
 
 
