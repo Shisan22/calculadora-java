@@ -157,14 +157,11 @@ public class calculadora_v2 {
 
             case 4:
                 
+                Scanner in = new Scanner(System.in);
+                int numUno = 0, numDos = 0, Resultado = 0, SumaDigitos = 0;
                 System.out.println("*******************************************************************************************************");
                 System.out.println("**           Muy bien, Seleccionaste Calcular el numero segun la numerologia.                        **");
                 System.out.println("*******************************************************************************************************");
-                System.out.println("*******************************************************************************************************");
-                System.out.print("**                             Ahora ingresa tu dia de nacimiento: ");
-                edad_perro_int = sc.nextDouble();
-                System.out.println("*******************************************************************************************************");
-
             break;
 
 
