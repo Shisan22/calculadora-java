@@ -162,6 +162,12 @@ public class calculadora_v2 {
                 System.out.println("*******************************************************************************************************");
                 System.out.println("**           Muy bien, Seleccionaste Calcular el numero segun la numerologia.                        **");
                 System.out.println("*******************************************************************************************************");
+                
+                System.out.println("*******************************************************************************************************");
+                System.out.print("**            Ahora ingresa el primer numero del dia en que naciste de nacimiento:                       ");
+                numUno = in.nextInt();
+                System.out.println("*******************************************************************************************************");
+                
             break;
 
 
