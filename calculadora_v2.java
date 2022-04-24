@@ -164,12 +164,12 @@ public class calculadora_v2 {
                 System.out.println("*******************************************************************************************************");
                 
                 System.out.println("*******************************************************************************************************");
-                System.out.print("**            Ahora ingresa el primer numero del dia en que naciste de nacimiento:                       ");
+                System.out.print("**           Ahora ingresa el primer numero del dia en que naciste: ");
                 numUno = in.nextInt();
                 System.out.println("*******************************************************************************************************");
                 
                 System.out.println("*******************************************************************************************************");
-                System.out.print("**                   Ahora ingresa el segundo numero de tu dia de nacimiento:                            ");
+                System.out.print("**           Ahora ingresa el segundo numero de tu dia de nacimiento: ");
                 numDos = in.nextInt();
                 System.out.println("*******************************************************************************************************");
                 
@@ -189,9 +189,6 @@ public class calculadora_v2 {
                 System.out.println("la suma de los digito es: " + SumaDigitos);
                 
             break;
-
-
-
             default:
                 System.out.println("Opcion incorrectos");
                 break;
