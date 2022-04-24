@@ -185,6 +185,9 @@ public class calculadora_v2 {
                             Temp = Temp / 10;
                 }
                 
+                System.out.println("tu numerologuia segun tu dia de nacimiento es: " + Resultado);
+                System.out.println("la suma de los digito es: " + SumaDigitos);
+                
             break;
 
 
