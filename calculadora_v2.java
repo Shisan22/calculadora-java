@@ -21,6 +21,7 @@ public class calculadora_v2 {
         System.out.println("**                         2. Calcular la cantidad de dias vividos por una personas.                 **");
         System.out.println("**                         3. Calcular la edad de una persona en edad  de perro.                     **");
         System.out.println("**                         4. Calcular el numero segun la numerologia.                               **");
+        System.out.println("**                         5. Autores (Admins supremos)                                              **");
         System.out.println("**                                                                                                   **");
         System.out.println("*******************************************************************************************************");
         System.out.println("*******************************************************************************************************");
@@ -190,6 +191,34 @@ public class calculadora_v2 {
                 System.out.println("**                          tu numerologia segun tu dia de nacimiento es: " + Resultado + "                         **");
                 System.out.println("**                             la suma de los digito es: " + SumaDigitos + "                                           **");
                 System.out.println("*******************************************************************************************************");
+
+            break;
+
+        case 5 :
+                System.out.println("              _.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._");
+                System.out.println("           .-'---      - ---     --     ---   -----   - --       ----  ----   -     ---`-.");
+                System.out.println("            )                                                                           (");
+                System.out.println("           (                                                                             )");
+                System.out.println("            )                                                                           (");
+                System.out.println("           (                                  Shisan22                                   )");
+                System.out.println("            )                         https://github.com/Shisan22                       (");
+                System.out.println("           (                                                                             )");
+                System.out.println("            )                                                                           (");
+                System.out.println("           (                                Nekstoreo450                                 )");
+                System.out.println("            )                       https://github.com/Nekstoreo450                     (");
+                System.out.println("           (                                                                             )");
+                System.out.println("            )                                                                           (");
+                System.out.println("           (                            (Profe ponganos 5.0)                             )");
+                System.out.println("            )                                                                           (");
+                System.out.println("           (___       _       _       _       _       _       _       _       _       ___)");
+                System.out.println("               (__  _) ( __ _) (__  _) (__ _ ) `-._.-' ( _ __) (_  __) (_ __ ) (_  __)");
+                System.out.println("               ( _ __) (_  __) (__ __) `-._.-'         `-._.-' (__ __) (__  _) (__ _ )");
+                System.out.println("               (__  _) (_ _ _) `-._.-'                         `-._.-' (_ _ _) (_  __)");
+                System.out.println("               (_ ___) `-._.-'                                         `-._.-' (___ _)");
+                System.out.println("               `-._.-'                                                         `-._.-'");
+
+
+
 
             break;
             default:
