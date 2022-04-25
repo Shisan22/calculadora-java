@@ -21,7 +21,6 @@ public class calculadora_v2 {
         System.out.println("**                         2. Calcular la cantidad de dias vividos por una personas.                 **");
         System.out.println("**                         3. Calcular la edad de una persona en edad  de perro.                     **");
         System.out.println("**                         4. Calcular el numero segun la numerologia.                               **");
-        System.out.println("**                         5. Hacer una donacion a los Creadores.                                    **");
         System.out.println("**                                                                                                   **");
         System.out.println("*******************************************************************************************************");
         System.out.println("*******************************************************************************************************");
@@ -37,12 +36,13 @@ public class calculadora_v2 {
             int dia = 0; 
             int mes = 0;
             System.out.println("*******************************************************************************************************");
-            System.out.println("**                Muy bien, Seleccionaste Calcular el signo del zodiaco de una persona.               **");
+            System.out.println("**                Muy bien, Seleccionaste Calcular el signo del zodiaco de una persona.              **");
             System.out.println("*******************************************************************************************************");
             System.out.println("*******************************************************************************************************");
             System.out.println("**                       Ahora ingresa el mes de tu nacimiento                                       **");
+            mes = sc.nextInt();            
             System.out.println("*******************************************************************************************************");
-            mes = sc.nextInt();
+
 
             System.out.println("*******************************************************************************************************");
             System.out.println("**                         Ahora ingresa el dia de tu nacimiento                                     **");
@@ -106,12 +106,14 @@ public class calculadora_v2 {
 
 
             case 2:
+                
                 int edad = 0 , meses = 0 , dias = 0 , horas = 0;
+
                 System.out.println("*******************************************************************************************************");
                 System.out.println("**          Muy bien, Seleccionaste Calcular la cantidad de dias vividos por una personas.           **");
                 System.out.println("*******************************************************************************************************");
                 System.out.println("*******************************************************************************************************");
-                System.out.print("**                                      Ahora ingresa tu edad");
+                System.out.print("**                                      Ahora ingresa tu edad: ");
                 edad = sc.nextInt();
                 System.out.println("*******************************************************************************************************");
                 
@@ -123,7 +125,7 @@ public class calculadora_v2 {
                 System.out.println("**                                Has vivido aproximadamente " + meses + " meses                               **");
                 System.out.println("*******************************************************************************************************");
                 System.out.println("*******************************************************************************************************");
-                System.out.println("**                              Has vivido aproximadamente " + dias + " dias                                 **");
+                System.out.println("**                              Has vivido aproximadamente " + dias + " dias                                **");
                 System.out.println("*******************************************************************************************************");
                 System.out.println("*******************************************************************************************************");
                 System.out.println("**                             Has vivido aproximadamente " + horas + " horas                               **");
@@ -134,7 +136,7 @@ public class calculadora_v2 {
 
             case 3: 
                 
-                double edad_perro_int = 0;
+                double edad_perro_in = 0;
                 double edad_perro_out = 0;
                 DecimalFormat formato = new DecimalFormat("#.##");
 
@@ -143,10 +145,10 @@ public class calculadora_v2 {
                 System.out.println("*******************************************************************************************************");
                 System.out.println("*******************************************************************************************************");
                 System.out.print("**                                    Ahora ingresa tu edad: ");
-                edad_perro_int = sc.nextDouble();
+                edad_perro_in = sc.nextDouble();
                 System.out.println("*******************************************************************************************************");
 
-                edad_perro_out = edad_perro_int / 7;
+                edad_perro_out = edad_perro_in / 7;
                 
                 System.out.println("*******************************************************************************************************");
                 System.out.println("**                Tu edad en años de perro es aproximandamente " + formato.format(edad_perro_out) + " años de perro                  **");
@@ -184,13 +186,14 @@ public class calculadora_v2 {
                     SumaDigitos = SumaDigitos + Temp % 10;
                             Temp = Temp / 10;
                 }
-                
-                System.out.println("tu numerologuia segun tu dia de nacimiento es: " + Resultado);
-                System.out.println("la suma de los digito es: " + SumaDigitos);
-                
+                System.out.println("*******************************************************************************************************");                
+                System.out.println("**                          tu numerologia segun tu dia de nacimiento es: " + Resultado + "                         **");
+                System.out.println("**                             la suma de los digito es: " + SumaDigitos + "                                           **");
+                System.out.println("*******************************************************************************************************");
+
             break;
             default:
-                System.out.println("Opcion incorrectos");
+                System.out.println("Opcion incorrecta");
                 break;
         }
 
