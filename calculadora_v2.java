@@ -2,9 +2,9 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
- * calculadora_v2
+ * Calculadora_v2
  */
-public class calculadora_v2 {
+public class Calculadora_v2 {
 
     public static void main(String[] args) {
         
@@ -164,22 +164,22 @@ public class calculadora_v2 {
             case 4:
                 
                 Scanner in = new Scanner(System.in);
-                int numUno = 0, numDos = 0, Resultado = 0, SumaDigitos = 0;
+                int NumUno = 0, NumDos = 0, Resultado = 0, SumaDigitos = 0;
                 System.out.println("*******************************************************************************************************");
                 System.out.println("**           Muy bien, Seleccionaste Calcular el numero segun la numerologia.                        **");
                 System.out.println("*******************************************************************************************************");
                 
                 System.out.println("*******************************************************************************************************");
                 System.out.print("**           Ahora ingresa el primer numero del dia en que naciste: ");
-                numUno = in.nextInt();
+                NumUno = in.nextInt();
                 System.out.println("*******************************************************************************************************");
                 
                 System.out.println("*******************************************************************************************************");
                 System.out.print("**           Ahora ingresa el segundo numero de tu dia de nacimiento: ");
-                numDos = in.nextInt();
+                NumDos = in.nextInt();
                 System.out.println("*******************************************************************************************************");
                 
-                Resultado = numUno + numDos ;
+                Resultado = NumUno + NumDos ;
                 int Temp = Resultado;
                 //La variable temp pasa a valer el resultado de sumar el valor de temp al resultado de sacar el 
                 //residuo del número entre 10 (con esta operación, por ejemplo, si tenemos 456 al aplicar el residuo entre 10 el resto 
@@ -191,8 +191,8 @@ public class calculadora_v2 {
                             Temp = Temp / 10;
                 }
                 System.out.println("*******************************************************************************************************");                
-                System.out.println("**                          tu numerologia segun tu dia de nacimiento es: " + Resultado + "                         **");
-                System.out.println("**                             la suma de los digito es: " + SumaDigitos + "                                           **");
+                System.out.println("**                             la suma de los digito es: " + Resultado + "                                           **");
+                System.out.println("**                          tu numerologia segun tu dia de nacimiento es: " + SumaDigitos + "                         **");
                 System.out.println("*******************************************************************************************************");
 
             break;
