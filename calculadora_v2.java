@@ -10,6 +10,8 @@ public class calculadora_v2 {
         
         Scanner sc = new Scanner(System.in);
         int opcion_menu = 0;
+        
+
         System.out.println("                ___   _   _    ___ _   _ _      _   ___   ___  ___    _     ___ ___  ___   __               ");
         System.out.println("       / __| /_\\ | |  / __| | | | |    /_\\ |   \\ / _ \\| _ \\  /_\\   | _ \\ _ \\/ _ \\  \\ \\ / /_  )   ");
         System.out.println("      | (__ / _ \\| |_| (__| |_| | |__ / _ \\| |) | (_) |   / / _ \\  |  _/   / (_) |  \\ V / / /           ");
@@ -36,6 +38,7 @@ public class calculadora_v2 {
             
             int dia = 0; 
             int mes = 0;
+            
             System.out.println("*******************************************************************************************************");
             System.out.println("**                Muy bien, Seleccionaste Calcular el signo del zodiaco de una persona.              **");
             System.out.println("*******************************************************************************************************");
@@ -150,9 +153,9 @@ public class calculadora_v2 {
                 System.out.println("*******************************************************************************************************");
 
                 edad_perro_out = edad_perro_in / 7;
-                
+                // en la siguiente linea se usa una secuencia de escape para oder imprimir la letra ñ
                 System.out.println("*******************************************************************************************************");
-                System.out.println("**                Tu edad en años de perro es aproximandamente " + formato.format(edad_perro_out) + " años de perro                  **");
+                System.out.println("**                Tu edad en a\u00f1os de perro es aproximandamente " + formato.format(edad_perro_out) + " a\u00f1os de perro                  **");
                 System.out.println("*******************************************************************************************************");
             break;
 
