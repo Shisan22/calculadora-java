@@ -106,7 +106,7 @@ public class Calculadora_v2 {
                 System.out.println("**                               Valores incorrectos :\\                                             **"); 
                 System.out.println("*******************************************************************************************************");                
             }
-                break;
+            break;
 
 
             case 2:
@@ -135,7 +135,7 @@ public class Calculadora_v2 {
                 System.out.println("**                             Has vivido aproximadamente " + horas + " horas                               **");
                 System.out.println("*******************************************************************************************************");
 
-                break;
+            break;
 
 
             case 3: 
@@ -191,13 +191,13 @@ public class Calculadora_v2 {
                             Temp = Temp / 10;
                 }
                 System.out.println("*******************************************************************************************************");                
-                System.out.println("**                             la suma de los digito es: " + Resultado + "                                           **");
-                System.out.println("**                          tu numerologia segun tu dia de nacimiento es: " + SumaDigitos + "                         **");
+                System.out.println("**                    la suma de los digito es: " + Resultado + "                                    ");
+                System.out.println("**              tu numerologia segun tu dia de nacimiento es: " + SumaDigitos + "                    ");
                 System.out.println("*******************************************************************************************************");
 
             break;
 
-        case 5 :
+            case 5 :
                 System.out.println("              _.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._.-=-._");
                 System.out.println("           .-'---      - ---     --     ---   -----   - --       ----  ----   -     ---`-.");
                 System.out.println("            )                                                                           (");
@@ -225,8 +225,10 @@ public class Calculadora_v2 {
 
             break;
             default:
+                System.out.println("*******************************************************************************************************");
                 System.out.println("Opcion incorrecta");
-                break;
+                System.out.println("*******************************************************************************************************");
+            break;
         }
 
     }
