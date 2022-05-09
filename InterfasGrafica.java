@@ -5,7 +5,7 @@ public class InterfasGrafica extends JFrame implements ActionListener{
 
   private JLabel label1;
   private JLabel label2;  
-  private JTextField respuesta;
+  private JTextField mes, dia;
   private JButton botonAceptar;
   private JButton botoncerrar;
   
@@ -19,12 +19,16 @@ public class InterfasGrafica extends JFrame implements ActionListener{
     label2.setBounds(10,50,100,30);
     add(label2);
     
-    respuesta = new JTextField();
-    respuesta.setBounds(120,180,150,20);
-    add(respuesta);
+    mes = new JTextField();
+    mes.setBounds(10,80,40,40);
+    add(mes);
+    
+    dia = new JTextField();
+    dia.setBounds(50,80,40,40);
+    add(dia);
     
     botonAceptar = new JButton("Aceptar");
-    botonAceptar.setBounds(10,210,100,30);
+    botonAceptar.setBounds(10,140,100,30);
     add(botonAceptar);
     botonAceptar.addActionListener(this);
     
@@ -36,9 +40,13 @@ public class InterfasGrafica extends JFrame implements ActionListener{
 
   public void actionPerformed(ActionEvent e){
     if(e.getSource() == botonAceptar){
-      String texto = respuesta.getText();
+      String texto = mes.getText();
       setTitle(texto);
       }
+    if(e.getSource() == botonAceptar){
+      String texto = dia.getText();
+      setTitle(texto);
+    }
     if(e.getSource() == botoncerrar){
       System.exit(0);
     }
