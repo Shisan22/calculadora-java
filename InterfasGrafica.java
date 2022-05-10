@@ -8,7 +8,8 @@ public class InterfasGrafica extends JFrame implements ActionListener{
   private JTextField mes, dia;
   private JButton botonAceptar;
   private JButton botoncerrar;
-  
+  private JLabel signo;
+
   public InterfasGrafica(){
     setLayout(null);
     label1 = new JLabel ("Calculadora de zodiaco");
@@ -36,19 +37,25 @@ public class InterfasGrafica extends JFrame implements ActionListener{
     botoncerrar.setBounds(300,270,100,30);
     add(botoncerrar);
     botoncerrar.addActionListener(this);
+
+    signo = new JLabel(mes + dia);
+    signo.setBounds(10,200,100,30);
+    add(signo);
   }
 
   public void actionPerformed(ActionEvent e){
     if(e.getSource() == botonAceptar){
       String texto = mes.getText();
       setTitle(texto);
-      }
+    }
     if(e.getSource() == botonAceptar){
       String texto = dia.getText();
       setTitle(texto);
     }
     if(e.getSource() == botoncerrar){
       System.exit(0);
+    }
+    if(e.getSource() == botonAceptar){
     }
   }
   
