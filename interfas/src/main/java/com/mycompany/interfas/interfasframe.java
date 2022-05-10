@@ -32,8 +32,9 @@ public class interfasframe extends javax.swing.JFrame {
         botoncerrar = new javax.swing.JButton();
         Dia = new javax.swing.JTextField();
         Mes = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        LabelDia = new javax.swing.JLabel();
+        LabelMes = new javax.swing.JLabel();
+        BotonAceptar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Calculadora del zodiaco");
@@ -57,37 +58,46 @@ public class interfasframe extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Dia:");
+        LabelDia.setText("Dia:");
 
-        jLabel2.setText("Mes:");
+        LabelMes.setText("Mes:");
+
+        BotonAceptar.setText("Aceptar");
+        BotonAceptar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonAceptarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(botoncerrar)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(Label1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(6, 6, 6)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(LabelDia, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(2, 2, 2)
                                 .addComponent(Dia, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(LabelMes, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(Mes, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(95, 349, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(botoncerrar)
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(95, 349, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BotonAceptar)
+                            .addComponent(Label1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -97,11 +107,13 @@ public class interfasframe extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Dia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Mes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addGap(18, 18, 18)
+                    .addComponent(LabelDia)
+                    .addComponent(LabelMes))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(BotonAceptar)
+                .addGap(37, 37, 37)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 212, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
                 .addComponent(botoncerrar)
                 .addContainerGap())
         );
@@ -110,14 +122,55 @@ public class interfasframe extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botoncerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botoncerrarActionPerformed
-    if(evt.getSource() == botoncerrar){
-      System.exit(0);
-    }
+
     }//GEN-LAST:event_botoncerrarActionPerformed
 
     private void MesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MesActionPerformed
-        // TODO add your handling code here:
+    if(evt.getSource() == botoncerrar){
+      System.exit(0);
+    }
     }//GEN-LAST:event_MesActionPerformed
+
+    private void BotonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAceptarActionPerformed
+            int dia = Integer.parseInt(Dia.getText());
+            int mes = Integer.parseInt(Mes.getText());
+ 
+            if ((mes == 1 && dia >= 21) || (mes == 2 && dia <= 19)) {
+              Respuesta.setText("Tu Signo Zodiacal es Acuario");
+
+            } else if ((mes == 2 && dia >= 20) || (mes == 3 && dia <= 20)) {
+              Respuesta.setText("Signo Zodiacal es Piscis");
+
+            } else if ((mes == 3 && dia >= 21) || (mes == 4 && dia <= 20)) {
+              Respuesta.setText("Tu Signo Zodiacal es Aries");
+
+            } else if ((mes == 4 && dia >= 21) || (mes == 5 && dia <= 21)) {
+              Respuesta.setText("Tu Signo Zodiacal es Taurus");
+
+            } else if ((mes == 5 && dia >= 22) || (mes == 6 && dia <= 21)) {
+              Respuesta.setText("Tu Signo Zodiacal es Gemini");
+
+            } else if ((mes == 6 && dia >= 22) || (mes == 7 && dia <= 22)) {
+              Respuesta.setText("Tu Signo Zodiacal es Cancer");
+            
+            } else if ((mes == 7 && dia >= 23) || (mes == 8 && dia <= 23)) {
+              Respuesta.setText("Tu Signo Zodiacal es Leo");
+
+            } else if ((mes == 8 && dia >= 24) || (mes == 9 && dia <= 23)) {
+              Respuesta.setText("Tu Signo Zodiacal es Virgo");
+            
+            } else if ((mes == 9 && dia >= 24) || (mes == 10 && dia <= 23)) {
+              Respuesta.setText("Tu Signo Zodiacal es Libra");
+
+            } else if ((mes == 10 && dia >= 24) || (mes == 11 && dia <= 22)) {
+              Respuesta.setText("Tu Signo Zodiacal es Escorpio");
+             
+            } else if ((mes == 11 && dia >= 23) || (mes == 12 && dia <= 21)) {
+              Respuesta.setText("Tu Signo Zodiacal es Sagitario");
+             
+            } else if ((mes == 12 && dia >= 22) || (mes == 1 && dia <= 20)) {
+              Respuesta.setText("Tu Signo Zodiacal es Capricornio");
+    }//GEN-LAST:event_BotonAceptarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -158,13 +211,14 @@ public class interfasframe extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BotonAceptar;
     private javax.swing.JTextField Dia;
     private javax.swing.JLabel Label1;
+    private javax.swing.JLabel LabelDia;
+    private javax.swing.JLabel LabelMes;
     private javax.swing.JTextField Mes;
     private javax.swing.JTextArea Respuesta;
     private javax.swing.JButton botoncerrar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
